@@ -40,8 +40,9 @@ html {
 
 body.dark {
     --light: #181a1e;
-    --grey: #25253C;
+    --grey: #25252c;
     --dark: #fbfbfb;
+    color: white;
 }
 
 body {
@@ -593,5 +594,19 @@ body {
     }
     .content nav form.show~.notif, .content nav form.show~.profile {
         display: none;
+    }
+
+    .content main .insights {
+        grid-template-columns: 1fr;
+    }
+
+    .content main .bottom-data .header {
+        min-height: 340px;
+    }
+    .content main .bottom-data .orders table {
+        min-height: 340px;
+    }
+    .content main .bottom-data .reminders .task-list {
+        min-height: 340px;
     }
 }
